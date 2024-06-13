@@ -1,0 +1,158 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+nav{
+    background-color: coral;
+    /* position: fixed;
+    z-index: 1;
+    top: 0; */ /* position fixed may be used later when able to fit responsive design */
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a{
+    float: left;
+    display: block;
+    width: 20%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: pink;
+}
+
+nav a:active {
+    color: pink;
+}
+
+nav a:hover{
+    background-color: darksalmon;
+    color: deeppink;
+}
+
+@media screen and (max-width:600px) {
+    nav a {
+        width: 100%;
+    }
+    
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 0;
+    background-color: lightpink;
+    padding-bottom: 30px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+ul li{
+    padding: 10px 5px;
+    margin: 0 auto;
+    font-size: 20px;
+   /* border-bottom: 1px solid grey; */ /*no need to underline if there is background color. */
+
+}
+
+.image-gallery{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+}
+
+figure:hover{
+    background-color: deeppink;
+    img{
+        width: 180px;
+        height: 180px;
+    }
+}
+
+figure{
+    background-color: darksalmon;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+figcaption{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.image-gallery::after{
+    content:"";
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+aside{
+   /* background-color: darksalmon; */
+    margin-top: 0;
+}
+
+.side{
+    padding-top: 0;
+}
+
+.side a{
+    color: black;
+    font-size: 20px;
+}
+
+.side a:hover{
+    font-weight: bold;
+    font-size: 24px;
+    color: deeppink;
+}
+
+.side li:nth-child(odd){
+    background-color: pink;
+}
+
+.side li:nth-child(even){
+    background-color: bisque;
+}
+
+article h1{
+    text-align: center;
+    font-size: 48px;
+    color: deeppink;
+}
+
+footer{
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    background-color: coral;
+}
+
+
+
+
